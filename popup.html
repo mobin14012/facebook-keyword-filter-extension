@@ -3,26 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Facebook Filter</title>
+    <title>Content Filter</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="popup">
-      <h1>Facebook Filter</h1>
-      <p class="subtitle">Hide posts and videos that contain blocked keywords.</p>
+      <section class="hero-card">
+        <header class="header">
+          <div class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" class="brand-icon">
+              <path
+                d="M12 3 4 7v5c0 5 3.4 8.8 8 10 4.6-1.2 8-5 8-10V7l-8-4Zm0 5.2a3.3 3.3 0 1 1 0 6.6 3.3 3.3 0 0 1 0-6.6Zm0 11c-2.1-.7-3.9-2.2-5-4.2.8-1.2 2.3-2 3.9-2h2.2c1.6 0 3.1.8 3.9 2-1.1 2-2.9 3.5-5 4.2Z"
+              />
+            </svg>
+          </div>
 
-      <form id="keyword-form" class="keyword-form">
-        <input
-          id="keyword-input"
-          type="text"
-          placeholder="Enter a keyword"
-          autocomplete="off"
-        />
-        <button type="submit" id="add-keyword-btn">Add Keyword</button>
-      </form>
+          <div class="header-copy">
+            <h1>Content Filter</h1>
+            <p class="subtitle">Block unwanted videos &amp; posts</p>
+          </div>
+        </header>
 
-      <ul id="keyword-list" class="keyword-list"></ul>
-      <p id="empty-state" class="empty-state">No keywords added yet.</p>
+        <form id="keyword-form" class="keyword-form">
+          <div class="input-shell">
+            <input
+              id="keyword-input"
+              type="text"
+              placeholder="Enter keyword..."
+              autocomplete="off"
+            />
+            <button type="submit" id="add-keyword-btn">
+              <span class="button-icon" aria-hidden="true">+</span>
+              <span>Add</span>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="keywords-card">
+        <div class="section-head">
+          <span class="section-label">Active Filters</span>
+          <span class="section-count">Keyword rules</span>
+        </div>
+
+        <ul id="keyword-list" class="keyword-list"></ul>
+        <p id="empty-state" class="empty-state">No filters added yet</p>
+      </section>
+
+      <footer class="footer-card">
+        <div class="footer-copy">
+          <span class="footer-title">Smart filtering enabled</span>
+          <span class="footer-subtitle">Auto-scans your Facebook feed in real time</span>
+        </div>
+
+        <label class="toggle" aria-label="Smart filtering enabled">
+          <input type="checkbox" checked />
+          <span class="toggle-slider"></span>
+        </label>
+      </footer>
     </main>
 
     <script src="popup.js"></script>
