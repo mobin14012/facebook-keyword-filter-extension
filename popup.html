@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Filter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <h1>Facebook Filter</h1>
+      <p class="subtitle">Hide posts and videos that contain blocked keywords.</p>
+
+      <form id="keyword-form" class="keyword-form">
+        <input
+          id="keyword-input"
+          type="text"
+          placeholder="Enter a keyword"
+          autocomplete="off"
+        />
+        <button type="submit" id="add-keyword-btn">Add Keyword</button>
+      </form>
+
+      <ul id="keyword-list" class="keyword-list"></ul>
+      <p id="empty-state" class="empty-state">No keywords added yet.</p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
