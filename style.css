@@ -74,25 +74,27 @@ body {
   margin-bottom: 18px;
 }
 
-.brand-mark {
-  width: 46px;
-  height: 46px;
-  display: grid;
-  place-items: center;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #4f46e5, #2563eb);
-  box-shadow: 0 12px 24px rgba(79, 70, 229, 0.24);
-  flex-shrink: 0;
+.header-logo-only {
+  display: block;
+  margin-bottom: 10px;
 }
 
-.brand-icon {
-  width: 22px;
-  height: 22px;
-  fill: #ffffff;
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(244, 247, 255, 0.92));
+  border: 1px solid rgba(99, 102, 241, 0.08);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
 }
 
-.header-copy {
-  min-width: 0;
+.brand-logo {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
