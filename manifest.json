@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
   "name": "Facebook Keyword Video Filter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hide Facebook posts and videos that contain user-defined keywords.",
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": ["storage"],
   "host_permissions": ["*://*.facebook.com/*"],
   "icons": {
     "16": "assets/icons/icon16.png",
